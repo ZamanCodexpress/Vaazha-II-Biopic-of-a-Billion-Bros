@@ -1,0 +1,186 @@
+/* hero */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.hero-title-container {
+  text-align: center;
+  opacity: 0; /* gsap handles this */
+  transform: scale(0.8);
+}
+
+.hero-title {
+  font-size: 15vw;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(180deg, #fff 0%, #777 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  letter-spacing: -2px;
+}
+
+.hero-title .accent-text {
+  background: linear-gradient(180deg, var(--accent-color) 0%, #a67c00 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 2vw;
+  letter-spacing: 12px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.poster-gallary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  perspective: 1000px;
+}
+
+.hero-poster {
+  position: absolute;
+  height: 70vh;
+  border-radius: 20px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+  object-fit: cover;
+  will-change: transform, opacity;
+  transform-origin: center;
+}
+
+/* base stack positions */
+.p-left {
+  z-index: 2;
+}
+
+.p-center {
+  z-index: 3;
+  height: 80vh;
+}
+
+.p-right {
+  z-index: 1;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scroll-indicator p {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: var(--accent-color);
+}
+
+.scroll-indicator .line {
+  width: 2px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-indicator .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: white;
+  animation: scrollDrop 2s infinite ease-in-out;
+}
+
+@keyframes scrollDrop {
+  0% {
+    top: -30px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 60px;
+    opacity: 0;
+  }
+}
+
+/* mobile fixes */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 20vw;
+  }
+
+  .hero-subtitle {
+    font-size: 4vw;
+    letter-spacing: 5px;
+  }
+
+  .hero-poster {
+    height: 50vh;
+  }
+
+  .p-center {
+    height: 60vh;
+  }
+
+  .p-left {
+    left: 0;
+  }
+
+  .p-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 22vw;
+  }
+
+  .hero-subtitle {
+    font-size: 5vw;
+    letter-spacing: 3px;
+  }
+
+  .hero-poster {
+    width: 70%;
+    height: auto;
+  }
+}

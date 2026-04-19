@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaazha II: Biopic of a Billion Bros</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Oswald:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+
+    <!-- Lenis Smooth Scroll -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <div class="hero-title-container">
+          <h1 class="hero-title">VAAZHA <span class="accent-text">II</span></h1>
+          <p class="hero-subtitle">BIOPIC OF A BILLION BROS</p>
+        </div>
+      </div>
+      <!-- Posters embedded -->
+      <div class="poster-gallary">
+        <img
+          src="assets/Posters/Vaazha 2 Poster-2.webp"
+          alt="Poster 2"
+          class="hero-poster p-left"
+          id="poster-2"
+        />
+        <img
+          src="assets/Posters/Vaazha 2 Poster-1.jpg"
+          alt="Poster 1"
+          class="hero-poster p-center"
+          id="poster-1"
+        />
+        <img
+          src="assets/Posters/Vaazha 2 Poster-3.webp"
+          alt="Poster 3"
+          class="hero-poster p-right"
+          id="poster-3"
+        />
+      </div>
+      <div class="scroll-indicator">
+        <p>SCROLL TO EXPLORE</p>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- The Story -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-image-wrapper">
+          <img
+            src="assets/Posters/Vaazha 2 Poster-1.jpg"
+            alt="About Movie"
+            class="about-image"
+          />
+        </div>
+        <div class="about-text-wrapper">
+          <h2 class="section-title">
+            THE <span class="accent-text">STORY</span>
+          </h2>
+          <div class="about-desc">
+            <p class="about-line">
+              Vaazha II: Biopic of a Billion Bros is here, and it’s taking the
+              chaos to a whole new level. This isn’t just your typical sequel;
+              it’s a raw, hilarious, and emotional look at what happens when the
+              "billion boys" finally have to face the real world. Directed by
+              Savin S.A. and written by Vipin Das, this movie is a love letter
+              to friendship and the messy journey of growing up.
+            </p>
+            <p class="about-line">
+              Hashir, Alan, Ajin, and Vinayak are back. They’ve always been the
+              troublemakers, the ones everyone gave up on. But as they stumble
+              from carefree school days into the cold reality of adulthood, the
+              pressure starts to mount. Broken hearts, job struggles, and family
+              expectations—it’s all hitting at once, testing the bond they
+              thought was unbreakable.
+            </p>
+            <p class="about-line">
+              This is the relatable, messy, and loud story of every friend group
+              out there. It’s about the rebellion of youth meeting the
+              responsibility of life. Some of the bros stay back, some move
+              abroad, but they’re all connected by the shared chaos of their
+              past.
+            </p>
+            <p class="about-line">
+              Vaazha II isn’t just a movie—it’s an experience. It’s about
+              realizing that even when life pulls you in a billion different
+              directions, the bros you started with are the same ones who’ll
+              have your back. It’s funny, it’s heart-wrenching, and it’s a
+              blockbuster for a reason.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trailer -->
+    <section class="trailer-section" id="trailer">
+      <h2 class="section-title text-center">
+        OFFICIAL <span class="accent-text">TRAILER</span>
+      </h2>
+      <div class="trailer-container">
+        <video
+          id="main-trailer"
+          src="https://res.cloudinary.com/dlmg92l5p/video/upload/v1776578072/Trailer_an8r9b.mp4"
+          controls
+          preload="metadata"
+        ></video>
+      </div>
+    </section>
+
+    <!-- The Cast -->
+    <section class="cast-section main-cast" id="cast">
+      <h2 class="section-title text-center">
+        THE <span class="accent-text">BROS</span>
+      </h2>
+      <div class="main-cast-container">
+        <div class="cast-card">
+          <div class="cast-image-wrap">
+            <img src="assets/Main/Hashir H.jpg" alt="Hashir" />
+          </div>
+          <div class="cast-info">
+            <h3>HASHIR</h3>
+            <p>
+              The ultimate carefree troublemaker. Life hits him hard after
+              school, but he’s staying back to figure things out the hard way.
+            </p>
+          </div>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-image-wrap">
+            <img src="assets/Main/Alan Bin Siraj.jpg" alt="Alan" />
+          </div>
+          <div class="cast-info">
+            <h3>ALAN</h3>
+            <p>
+              Pure impulse. He’s the one who usually starts the fire, and this
+              time, the consequences are changing everything for the gang.
+            </p>
+          </div>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-image-wrap">
+            <img src="assets/Main/Ajin Joy.jpg" alt="Ajin" />
+          </div>
+          <div class="cast-info">
+            <h3>AJIN</h3>
+            <p>
+              He left it all behind to work abroad for his family. Distance is a
+              killer, and it’s turning him into a completely different man.
+            </p>
+          </div>
+        </div>
+
+        <div class="cast-card">
+          <div class="cast-image-wrap">
+            <img src="assets/Main/Vinayak V.jpg" alt="Vinayak" />
+          </div>
+          <div class="cast-info">
+            <h3>VINAYAK</h3>
+            <p>
+              Chasing the dream in a new country but struggling with the reality
+              of being alone. Every call home is a reminder of what he's
+              missing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Cast -->
+    <section class="actors-section" id="actors">
+      <h2 class="section-title text-center">FEATURING</h2>
+      <div class="carousel-container">
+        <button class="carousel-btn prev-btn" id="prevBtn">&#10094;</button>
+        <div class="marquee-wrapper" id="carousel-wrapper">
+          <!-- JS fills this with the 22 actors -->
+          <div class="marquee-track" id="actors-track"></div>
+        </div>
+        <button class="carousel-btn next-btn" id="nextBtn">&#10095;</button>
+      </div>
+      <p class="and-more-text">And more...</p>
+    </section>
+
+    <!-- The Crew -->
+    <section class="crew-section" id="crew">
+      <h2 class="section-title text-center">
+        THE <span class="accent-text">CREATORS</span>
+      </h2>
+      <div class="crew-container">
+        <div class="crew-card">
+          <img src="assets/Director & Producer/Savin Sa.jpg" alt="Savin Sa" />
+          <div class="crew-label">
+            <h3>SAVIN S.A.</h3>
+            <p>Director</p>
+          </div>
+        </div>
+        <div class="crew-card">
+          <img src="assets/Director & Producer/Vipin Das.jpg" alt="Vipin Das" />
+          <div class="crew-label">
+            <h3>VIPIN DAS</h3>
+            <p>Writer & Producer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blockbuster Section (3D Tunnel Experience) -->
+    <section class="blockbuster-section" id="blockbuster">
+      <div class="blockbuster-viewport">
+        <div class="blockbuster-3d-stack">
+          <!-- Headline 1 -->
+          <div class="bb-headline bb-h1">THE BIGGEST SEQUEL</div>
+
+          <!-- Image 1 -->
+          <div class="bb-card bb-card-1">
+            <img
+              src="assets/Blockbuster/Blockbuster-1.jpg"
+              alt="Blockbuster 1"
+            />
+          </div>
+
+          <!-- Headline 2 -->
+          <div class="bb-headline bb-h2">OF THE YEAR</div>
+
+          <!-- Image 2 -->
+          <div class="bb-card bb-card-2">
+            <img
+              src="assets/Blockbuster/Blockbuster-2.webp"
+              alt="Blockbuster 2"
+            />
+          </div>
+
+          <!-- Final Headline -->
+          <div class="bb-headline bb-h3">VAAZHA RETURNS</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="footer-top">
+        <h1>VAAZHA <span class="accent-text">II</span></h1>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-links">
+          <a href="#hero">Hero Section</a>
+          <a href="#about">About Section</a>
+          <a href="#trailer">Trailer Section</a>
+          <a href="#crew">Director & Producer</a>
+          <a href="#cast">Cast Section</a>
+          <a href="#blockbuster">Blockbuster Section</a>
+        </div>
+        <div class="footer-credits">
+          <p>
+            Designed and developed by
+            <span class="developer-name">Zaman Siraj</span>
+          </p>
+          <p>© Vaazha II: Biopic of a Billion Bros</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Main Logic -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
